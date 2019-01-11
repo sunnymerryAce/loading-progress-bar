@@ -1,0 +1,32 @@
+extends ../partial/layout.pug
+
+block vars
+  - var date        = Date.now();
+  - var bodyClass   = ''
+  - var title       = 'title insert here'
+  - var description = ''
+  - var keywords    = ''
+  - var url         = ''
+  - var ogimage     = ''
+  - var site_name   = ''
+  - var style       = './css/style.css?version=' + date
+
+block script
+  script(charset="UTF-8" defer src='./js/vendor.bundle.js?version=' + date)
+  script(charset='UTF-8' defer src='./js/index.bundle.js?version=' + date)
+
+
+block contents
+  main#main(role='main')
+    .progress-bar
+      .progress-bar__loading
+      .progress-bar__back
+
+    .percentage 0%
+
+  .images
+    img(src='https://www.pakutaso.com/shared/img/thumb/yamasha1102015_TP_V.jpg')
+    img(src='https://images.pexels.com/photos/1209610/pexels-photo-1209610.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
+    img(src='https://images.pexels.com/photos/462030/pexels-photo-462030.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
+    img(src='https://images.pexels.com/photos/1755243/pexels-photo-1755243.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
+    img(src='https://images.pexels.com/photos/1769301/pexels-photo-1769301.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
