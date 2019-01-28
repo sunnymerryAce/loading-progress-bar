@@ -1,8 +1,7 @@
 /**
  * @author Yoichiro Hirano
- * @description MINI 60th All Year Present
+ * @description Progress Bar
  * @created 2019/01/10
- * @link https://cp.mini.jp/mini_present/
  */
 import anime from 'animejs';
 
